@@ -23,12 +23,3 @@ export const counterSlice = createSlice({
 export default counterSlice.reducer;
 export const { increment, decrement, incrementby2 } = counterSlice.actions;
 
-export const asyncincrement2 = (value) => async (dispatch, getState) => {
-  try {
-    setTimeout(() => {
-      dispatch(incrementby2(value));
-    }, 1000);
-  } catch (error) {
-    console.log(error);
-  }
-};

@@ -2,9 +2,8 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   increment,
   decrement,
-  incrementby2,
+  asyncincrement2,
 } from "./store/actions/counterActions";
-import { asyncincrement2 } from "./store/reducers/counterSlice";
 
 const App = () => {
   const { value } = useSelector((state) => state.counterReducer);
